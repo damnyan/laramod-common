@@ -1,0 +1,35 @@
+{
+    "name": "dmn-laramod/common-module",
+    "description": "",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "dc",
+            "email": "damnyan@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Common\\": "app/",
+            "Modules\\Common\\Database\\Factories\\": "database/factories/",
+            "Modules\\Common\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Common\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "dedoc/scramble": "^0.11.16",
+        "dmn/laravel-exception": "^1.0"
+    }
+}
